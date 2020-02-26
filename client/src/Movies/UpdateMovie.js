@@ -28,9 +28,9 @@ export default function UpdateMovie(props) {
     });
   };
 
-  const handleStars = (value, idx) => {
+  const handleStars = (value, id) => {
     const changedStar = movie.stars.map((star, i) =>
-      i === idx ? value : star
+      i === id? value : star
     );
     setMovie({ ...movie, stars: changedStar });
   };
@@ -44,7 +44,7 @@ export default function UpdateMovie(props) {
         setMovie(res.data);
         props.history.push(`/movies/${id}`);
       })
-      .catch(err => console.error(err));
+      .catch(error => console.error(error));
   };
 
   return (
@@ -82,7 +82,7 @@ export default function UpdateMovie(props) {
               type="text"
               name="stars"
               value={star}
-              onChange={e => handleStars(e.target.value, index)}
+              onChange={event => handleStars(event.target.value, index)}
             />
           );
         })}
@@ -91,3 +91,4 @@ export default function UpdateMovie(props) {
     </div>
   );
 }
+
