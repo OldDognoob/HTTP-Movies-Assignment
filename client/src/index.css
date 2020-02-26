@@ -75,3 +75,58 @@ body {
   color: red;
   text-align: center;
 }
+
+.update-button {
+  position: absolute;
+  bottom: 25px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightcoral;
+  cursor: pointer;
+}
+.update-button:hover {
+  background-color: #2953a0;
+  color: white;
+}
+.home-button {
+  padding: 5px 10px;
+  background-color: lightskyblue;
+}
+.movie-warning {
+  color: red;
+  text-align: center;
+}
+.delete-button {
+  position: absolute;
+  top: 25px;
+  right: 170px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+}
+.delete-button:hover {
+  background-color: green;
+  color: white;
+}
+.edit-button{
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 50px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightseagreen;
+  text-align: center;
+  color: black;
+  text-decoration: none;
+}
+.edit-button {
+  position: absolute;
+  top: 75px;
+  right: 25px;
+}
+.edit-button:hover {
+  background-color: green;
+  color: white;
+}
